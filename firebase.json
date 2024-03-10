@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "site": "springprotoon",
+    "public": "demo/src/main/resources/static",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/cadastrando",
+        "destination": "../cadastrado.html"
+      }
+    ]
+  }
+}
